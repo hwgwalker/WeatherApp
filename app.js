@@ -17,7 +17,7 @@ button.addEventListener('click', function () {
             const iconValue = data['weather'][0]['icon'];
 
             name.innerHTML = nameValue;
-            temp.innerHTML = `${tempValue}&#8451;`;
+            temp.innerHTML = `${Math.floor(tempValue)}&#8451;`;
             desc.innerHTML = descValue;
             icon.src = `https://openweathermap.org/img/wn/${iconValue}@4x.png`;
         })
